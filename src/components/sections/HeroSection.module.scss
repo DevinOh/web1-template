@@ -1,0 +1,50 @@
+.hero {
+  background: linear-gradient(180deg, rgba(77, 163, 255, 0.18), rgba(0, 0, 0, 0));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.kicker {
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.title {
+  margin: 0 0 12px;
+  font-size: 36px;
+  line-height: 1.1;
+
+  @media (max-width: 680px) {
+    font-size: 30px;
+  }
+}
+
+.subtitle {
+  color: var(--muted);
+  max-width: 680px;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.primary {
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #08101f;
+  font-weight: 900;
+}
+
+.secondary {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--text);
+  font-weight: 800;
+}

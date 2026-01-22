@@ -1,0 +1,30 @@
+:root {
+  --container: 1200px;
+  --pad: 16px;
+
+  --bg: #0b0d12;
+  --card: #121625;
+  --text: #e9ecf1;
+  --muted: #aab2c5;
+  --accent: #4da3ff;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
