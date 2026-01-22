@@ -76,17 +76,17 @@ export const contentA: Content = {
       {
         title: "Retail Tenant Improvement",
         desc: "Panel upgrades, lighting, rough-in & finishing.",
-        image: "/src/assets/work/work-1.jpg",
+        image: "/work/work-1.jpg",
       },
       {
         title: "Service Call Package",
         desc: "Fast troubleshooting workflow for common faults.",
-        image: "/src/assets/work/work-2.jpg",
+        image: "/work/work-2.jpg",
       },
       {
         title: "Small Commercial Build",
         desc: "Clean conduit runs and labeled circuits.",
-        image: "/src/assets/work/work-3.jpg",
+        image: "/work/work-3.jpg",
       },
     ],
   },
@@ -139,17 +139,17 @@ export const contentB: Content = {
       {
         title: "Retail Tenant Improvement",
         desc: "Panel upgrades, lighting, rough-in & finishing.",
-        image: "/src/assets/work/work-1.jpg",
+        image: "/work/work-1.jpg",
       },
       {
         title: "Service Call Package",
         desc: "Fast troubleshooting workflow for common faults.",
-        image: "/src/assets/work/work-2.jpg",
+        image: "/work/work-2.jpg",
       },
       {
         title: "Small Commercial Build",
         desc: "Clean conduit runs and labeled circuits.",
-        image: "/src/assets/work/work-3.jpg",
+        image: "/work/work-3.jpg",
       },
     ],
   },
