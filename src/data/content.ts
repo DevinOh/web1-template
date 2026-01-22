@@ -19,12 +19,11 @@ export type Content = {
     subtitle: string;
     button: { label: string; href: string };
   };
-    work: {
+  work: {
     title: string;
     items: { title: string; desc: string; image: string }[];
   };
-
-    contact: {
+  contact: {
     title: string;
     subtitle: string;
     fields: {
@@ -43,112 +42,158 @@ export type Content = {
 };
 
 export const contentA: Content = {
-  brand: "WEB1",
+  brand: "Service 3 Electric",
   nav: [
     { label: "Services", href: "#services" },
     { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    kicker: "Commercial • Industrial • Service",
-    title: "A clean starter template for your company website",
+    kicker: "Residential • Commercial • Emergency",
+    title: "Service 3 Electric",
     subtitle:
-      "Build fast by reusing sections. Swap theme + content to create new templates.",
-    primaryCta: { label: "Get a Quote", href: "#contact" },
-    secondaryCta: { label: "View services", href: "#services" },
+      "Licensed electricians delivering clean installs, safe upgrades, and fast troubleshooting. Request a quote today.",
+    primaryCta: { label: "Request a Quote", href: "#contact" },
+    secondaryCta: { label: "View Services", href: "#services" },
   },
+
   services: {
-  title: "Services",
-  items: [
-    { title: "Electrical Install", desc: "New builds, tenant improvements, upgrades.", icon: "⚡" },
-    { title: "Maintenance", desc: "Troubleshooting, service calls, preventative checks.", icon: "🛠️" },
-    { title: "Design Build", desc: "Plan + execute with predictable delivery.", icon: "📐" },
-  ],
-},
-  cta: {
-    title: "Ready to start?",
-    subtitle: "Send a quick inquiry and we’ll get back to you.",
-    button: { label: "Contact us", href: "#contact" },
-  },
-    work: {
-    title: "Work",
+    title: "Services",
     items: [
       {
-        title: "Retail Tenant Improvement",
-        desc: "Panel upgrades, lighting, rough-in & finishing.",
+        title: "Panel Upgrades",
+        desc: "Main panel upgrades, breaker replacements, and labeling for safer power.",
+        icon: "⚡",
+      },
+      {
+        title: "Basement Rough-In",
+        desc: "New construction wiring, circuits, and clean finishing for basements.",
+        icon: "🧰",
+      },
+      {
+        title: "Lighting & Fixtures",
+        desc: "Pot lights, outdoor lighting, switches/dimmers, and fixture installs.",
+        icon: "💡",
+      },
+      {
+        title: "EV Charger Installation",
+        desc: "Home EV charger installs with load checks and code-compliant wiring.",
+        icon: "🚗",
+      },
+      {
+        title: "Troubleshooting",
+        desc: "Fast diagnosis for outages, tripping breakers, and faulty circuits.",
+        icon: "🛠️",
+      },
+      {
+        title: "Commercial Service",
+        desc: "Tenant improvements, maintenance calls, and small commercial projects.",
+        icon: "🏢",
+      },
+    ],
+  },
+
+  work: {
+    title: "Recent Work",
+    items: [
+      {
+        title: "Basement Wiring & Finishing",
+        desc: "Rough-in circuits, outlets, lighting layout, and clean final installation.",
         image: "/work/work-1.jpg",
       },
       {
-        title: "Service Call Package",
-        desc: "Fast troubleshooting workflow for common faults.",
+        title: "Panel Replacement",
+        desc: "Upgraded service panel with clear labeling and safer distribution.",
         image: "/work/work-2.jpg",
       },
       {
-        title: "Small Commercial Build",
-        desc: "Clean conduit runs and labeled circuits.",
+        title: "Commercial Lighting Retrofit",
+        desc: "Efficient lighting upgrades for better brightness and lower energy cost.",
         image: "/work/work-3.jpg",
       },
     ],
   },
 
-  
-    contact: {
+  cta: {
+    title: "Need electrical help today?",
+    subtitle:
+      "Tell us about your job and we’ll reply with next steps and a quick estimate.",
+    button: { label: "Contact Service 3", href: "#contact" },
+  },
+
+  contact: {
     title: "Contact",
-    subtitle: "Send a quick message. We'll reply as soon as possible.",
+    subtitle:
+      "Send a quick message. We usually respond within 1 business day.",
     fields: {
       name: "Name",
       email: "Email",
       message: "Message",
     },
     submitLabel: "Send message",
-    successMessage: "Thanks! Your message has been prepared.",
+    successMessage: "Thanks! We received your message and will reply soon.",
   },
+
   footer: {
-    left: "Simple React + Vite + TS + SCSS template",
+    left: "Service 3 Electric • Licensed • Insured • Reliable",
     rightTop: "Calgary, AB",
-    rightBottom: "hello@example.com",
+    rightBottom: "service3@example.com",
   },
 };
 
 export const contentB: Content = {
-  brand: "WEB1 Lite",
+  brand: "Service 3 Electric",
   nav: [
     { label: "Services", href: "#services" },
     { label: "Work", href: "#work" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    kicker: "Fast • Simple • Reliable",
-    title: "A clean inquiry-first template",
+    kicker: "Fast response • Clear pricing • Clean work",
+    title: "Electricians you can trust",
     subtitle:
-      "Perfect for small businesses that want leads. Clean layout, strong CTA, quick contact form.",
-    primaryCta: { label: "Request a Quote", href: "#contact" },
-    secondaryCta: { label: "See work", href: "#work" },
+      "A lead-focused layout for small electrical businesses. Simple, professional, and ready for inquiries.",
+    primaryCta: { label: "Get an Estimate", href: "#contact" },
+    secondaryCta: { label: "See Our Work", href: "#work" },
   },
+
   services: {
     title: "What we do",
     items: [
-      { title: "Install", desc: "Simple installs done right.", icon: "⚡"  },
-      { title: "Repair", desc: "Fix issues quickly and safely.", icon: "🛠️"  },
-      { title: "Consult", desc: "Make the right plan before you spend.", icon: "📐"  },
+      {
+        title: "Install & Upgrade",
+        desc: "New circuits, panels, EV chargers, and clean upgrades.",
+        icon: "⚡",
+      },
+      {
+        title: "Repair & Troubleshoot",
+        desc: "Fix outages, breaker trips, and wiring issues safely.",
+        icon: "🛠️",
+      },
+      {
+        title: "Lighting",
+        desc: "Indoor/outdoor lighting, pot lights, fixtures, and switches.",
+        icon: "💡",
+      },
     ],
   },
-    work: {
-    title: "Work",
+
+  work: {
+    title: "Work Highlights",
     items: [
       {
-        title: "Retail Tenant Improvement",
-        desc: "Panel upgrades, lighting, rough-in & finishing.",
+        title: "Basement Rough-In",
+        desc: "Circuit planning + clean wiring for new basement builds.",
         image: "/work/work-1.jpg",
       },
       {
-        title: "Service Call Package",
-        desc: "Fast troubleshooting workflow for common faults.",
+        title: "Service Panel Upgrade",
+        desc: "Modern panel replacement with labeling and safety checks.",
         image: "/work/work-2.jpg",
       },
       {
-        title: "Small Commercial Build",
-        desc: "Clean conduit runs and labeled circuits.",
+        title: "Commercial Service Call",
+        desc: "Fast fixes for lighting, outlets, and small tenant improvements.",
         image: "/work/work-3.jpg",
       },
     ],
@@ -156,23 +201,27 @@ export const contentB: Content = {
 
   cta: {
     title: "Get a quick estimate",
-    subtitle: "Tell us what you need. We’ll reply with next steps.",
-    button: { label: "Start inquiry", href: "#contact" },
+    subtitle:
+      "Share a short description and photos (if available). We’ll respond with next steps.",
+    button: { label: "Start Inquiry", href: "#contact" },
   },
+
   contact: {
     title: "Contact",
-    subtitle: "We usually respond within 1 business day.",
+    subtitle:
+      "We typically respond within 1 business day. Emergency work may be available.",
     fields: {
       name: "Name",
       email: "Email",
       message: "Message",
     },
     submitLabel: "Send",
-    successMessage: "Thanks! We received your message.",
+    successMessage: "Thanks! Your inquiry was sent. We’ll get back to you soon.",
   },
+
   footer: {
-    left: "Template B • Inquiry-first layout",
+    left: "Service 3 Electric • Inquiry-first template",
     rightTop: "Calgary, AB",
-    rightBottom: "hello@example.com",
+    rightBottom: "service3@example.com",
   },
 };
